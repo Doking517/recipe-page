@@ -61,7 +61,6 @@ body {
     font-family: Outfit;
     font-weight: 450;
     font-size: var(--p);
-    margin-bottom: 1em;
     color: var(--stone-600);
     
 }
@@ -90,7 +89,7 @@ body {
 .banner ul li::marker{
     color: var(--Rose-800);
 }
-.banner ul .special-list{
+.special-list{
     color: var(--stone-900);
     font-weight: bold;
 }
@@ -113,10 +112,44 @@ body {
 .ingredients-container ul li{
     padding: 0 1em;
     color: var(--stone-600);
+    font-weight: 500;
 }
 .ingredients-container .list-style li::marker{
     color: var(--Brown-800);
 }
 .instructions-container{
     margin: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-bottom: 1px solid var(--stone-150);
+    padding: 0 0 2em 0;
+}
+.instructions-container .ordoned-list{
+    margin-left: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    
+}
+.ordoned-list li{
+    font-size: var(--p);
+    padding-left: 1em;
+    color: var(--stone-600);
+    font-weight: 500;
+    
+}
+.instructions-container .ordoned-list li::marker{
+    color: var(--Brown-800);
+    font-weight: bold;
+    
+}
+.nutrition{
+    font-weight: 500;
+}
+.nutrition p{
+    margin: 1em 0;
+}
+table td{
+    border: 2px solid var(--Rose-800);
 }
