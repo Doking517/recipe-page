@@ -1,52 +1,122 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* reset all the default css */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --p: 16px;
+    --Stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+    background-color: var(--Rose-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 4em 0;
+    font-family: Outfit;
+    
 
-
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 38%;
+    padding: 2%;
+    height: 100%;
+    /* min-height: 100dvh; */
+    border-radius: 25px;
+}
+
+.omelette-container{
+    height: 35vh;
+    background-image: url("./assets/images/image-omelette.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: auto;
+}
+.big-title{
+    font-family: Young Serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 1em 0;
+}
+.banner-paragraph{
+    font-family: Outfit;
+    font-weight: 450;
+    font-size: var(--p);
+    margin-bottom: 1em;
+    color: var(--stone-600);
+    
+}
+.banner{
+    background-color: var(--Rose-50);
+    padding: .9em 2em;
+    border-radius: 15px;
+    line-height: 1.9;
+    font-family: Outfit;
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.banner .small-title{  
+    color: var(--Rose-800);
+    
+}
+.banner ul{
+    margin-left: 1.5em;
+}
+
+.banner ul li{
+    padding: 0 1em;
+}
+.banner ul li::marker{
+    color: var(--Rose-800);
+}
+.banner ul .special-list{
+    color: var(--stone-900);
+    font-weight: bold;
+}
+.ingredients-container{
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--stone-150);
+    padding: 0 0 1.5em 0;
+}
+.special-title{
+    font-family: Young Serif;
+    color: var(--Brown-800);
+    font-size: 30px;
+    font-weight: 100;
+}
+.ingredients-container .list-style{
+    margin-left: 1em;
+}
+.ingredients-container ul li{
+    padding: 0 1em;
+    color: var(--stone-600);
+}
+.ingredients-container .list-style li::marker{
+    color: var(--Brown-800);
+}
+.instructions-container{
+    margin: 1.5em 0;
+}
