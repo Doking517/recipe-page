@@ -28,8 +28,14 @@ body {
     
 
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    margin-top: 1em;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
 
 
 .container{
@@ -146,10 +152,30 @@ body {
 }
 .nutrition{
     font-weight: 500;
+    color: var(--stone-600);
+
 }
 .nutrition p{
     margin: 1em 0;
 }
-table td{
-    border: 2px solid var(--Rose-800);
+.nutrition-table-container{
+    display: flex;
+    flex-direction: column;
+}
+.content-table{
+    border-collapse: collapse;
+}
+.content-table tbody td{
+    padding: 1em 0;
+    
+}
+.content-table tbody tr{
+    border-bottom: 1px solid var(--stone-150);
+}
+.content-table tbody tr:last-child{
+    border-bottom: none;
+}
+.content-table tbody td.bold-table-item{
+    font-weight: bold;
+    color: var(--Brown-800);
 }
