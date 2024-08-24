@@ -195,7 +195,7 @@ body {
     }
     
     .omelette-container{
-        
+        height: 35vh;
         padding: 0;
         border-radius: 0;
         width: 100%;
@@ -222,6 +222,8 @@ body {
     .omelette-container{
         border-radius: 15px;
         background-position: center;
+        height: 35vh;
+
     }
     .big-title{
         font-size: 30px;
